@@ -1,0 +1,21 @@
+<form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "Tsielo"
+       && document.getElementById("text2").value == "Terrence300" )
+    {
+        alert( "validation succeeded" );
+        location.href="http://mudau.club/";
+    }
+    else
+    {
+        alert( "Access denied!" );
+        location.href="fail.html";
+    }
+}
+</script>
